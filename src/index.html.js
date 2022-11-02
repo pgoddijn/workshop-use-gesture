@@ -31,9 +31,14 @@ export default function Index({ location, data }) {
       <body>
         {data && data.notFound
           ? 'Not found'
-          : <App config={config.client} />
+          : <App seed={hash(process.env.USER)} />
         }
       </body>
     </html>
   )
 }
+
+function hash(s) {
+  return s.split('').reduce(function (a, b) { a = ((a << 5) - a) + b.charCodeAt(0); return a & a }, 0)
+}
+
