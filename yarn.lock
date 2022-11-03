@@ -1371,6 +1371,18 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
+"@use-gesture/core@10.2.21":
+  version "10.2.21"
+  resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.21.tgz#5733548c807ebde07e3b1645998bf2e35f352f2d"
+  integrity sha512-EpqNIZ/diwbpjzjRqk+deMg+WOfW9GCYDZCZ6LHS2WPo6ea1flxC/0ncpsY7oUbMqJeKSsW6E7IOk0I6jji69g==
+
+"@use-gesture/react@^10.2.21":
+  version "10.2.21"
+  resolved "https://registry.yarnpkg.com/@use-gesture/react/-/react-10.2.21.tgz#e99095189065dfa355a2bc75ccef968a0d7b9c05"
+  integrity sha512-R8F6dnYWycpFPKi4ljvh1F+ItcBv8xFYFw7KIhUCJ3HWGndDKzqhahHshsM5XkuLL13PblNOf8oVgmSnRbB3Gg==
+  dependencies:
+    "@use-gesture/core" "10.2.21"
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
