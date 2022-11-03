@@ -1,0 +1,23 @@
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > .avocado {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.avocado {
+  position: relative;
+  z-index: 0;
+  background-image: url(/images/avocados/happy.svg);
+  background-repeat: no-repeat;
+
+  & > .pit {
+    position: absolute;
+    left: 116px;
+    top: 151px;
+  }
+}
