@@ -8,5 +8,8 @@
     top: calc(var(--y) * 100vh - var(--x) * 200px);
     width: 200px;
     height: auto;
+    touch-action: "none";
+    user-select: "none";
   }
 }
+
