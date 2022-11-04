@@ -19,5 +19,7 @@
     position: absolute;
     left: 116px;
     top: 151px;
+    touch-action: "none";
+    user-select: "none";
   }
 }
