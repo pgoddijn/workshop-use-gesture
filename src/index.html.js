@@ -5,7 +5,18 @@ import javascript from '@kaliber/build/lib/javascript'
 import polyfill from '@kaliber/build/lib/polyfill'
 import rollbar from '@kaliber/build/lib/rollbar'
 import config from '@kaliber/config'
+import { pseudoRandom } from '@kaliber/math'
 import App from '/App.universal'
+
+import stickerA from '/images/stickers/cactus.svg'
+import stickerC from '/images/stickers/car.svg'
+import stickerD from '/images/stickers/strawberry.svg'
+
+const sticker = [
+  stickerA,
+  stickerC,
+  stickerD
+][Math.floor(pseudoRandom(process.env.USER + 'd') * 3)]
 
 Index.routes = {
   match(location) {
@@ -31,7 +42,7 @@ export default function Index({ location, data }) {
       <body>
         {data && data.notFound
           ? 'Not found'
-          : <App seed={hash(process.env.USER)} />
+          : <App {...{ sticker }} seed={hash(process.env.USER)} />
         }
       </body>
     </html>

@@ -1,5 +1,6 @@
 .component {
   position: relative;
+  background-color: #eee;
 
   & > .sticker {
     position: absolute;

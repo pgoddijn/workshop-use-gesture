@@ -1,9 +1,8 @@
 import { useSpring, animated } from '@react-spring/web'
 import { pseudoRandom } from '@kaliber/math'
-import sticker from '/images/stickers/cactus.svg'
 import styles from './App.css'
 
-export default function App({ seed }) {
+export default function App({ sticker, seed }) {
   const x = pseudoRandom(`${seed}x`)
   const y = pseudoRandom(`${seed}y`)
 
